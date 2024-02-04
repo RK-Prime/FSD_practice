@@ -1,0 +1,170 @@
+/* * => Universal selector */
+/* #idName => id selector */
+/* .className => class selector */
+/* tagName => tag selector */
+/* slector,selctor => Accessing multiple selector items*/
+
+body{
+    padding-bottom: 10px;
+}
+
+#ul_circle{
+    list-style-type: circle;
+}
+
+#ul_sqr{
+    list-style-type: square;
+}
+
+#ul_disc{
+    list-style-type: disc;
+}
+
+#ul_none{
+    list-style-type: none;
+}
+
+#ol_num{
+    list-style-type: decimal;
+}
+
+#ol_lalpha{
+    list-style-type: lower-alpha;
+}
+
+#ol_ualpha{
+    list-style-type: upper-alpha;
+}
+
+#ol_lroman{
+    list-style-type: lower-roman;
+}
+
+#ol_uroman{
+    list-style-type: upper-roman;
+}
+
+#ol_zero{
+    list-style-type: decimal-leading-zero;
+}
+
+#yt_link{
+    text-decoration: none;
+    color: tomato;
+    font-size: 20px;
+    background-color: bisque;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    border: solid;
+    border-width: 10px;
+    border-color: rebeccapurple;
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px;
+    opacity: 0.9;
+    box-shadow: 5px 5px 20px tomato;
+
+}
+
+#yt_link:hover{
+    color: rebeccapurple;
+    transition: 0.5s;
+    border-color: tomato;
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px rebeccapurple;
+}
+
+#yt_link:active{
+    color: black;
+}
+
+#btn{
+    color: rebeccapurple;
+    font-size: 20px;
+    background-color:bisque;
+    padding: 10px;
+    border-radius: 10px;
+    border: groove;
+    border-color: tomato;
+    border-width: 10px;
+    box-shadow: 4px 4px 20px;
+    
+}
+
+#btn:hover{
+    color: tomato;
+    border-color: rebeccapurple;
+    opacity: 0.8;
+    border-width: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 6px 6px 10px;
+
+}
+
+
+/* + => Immediate or adjacent Sibling selector*/
+
+h2+h2{
+    color: bisque;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* elder_sibling_tag + Tag_needed */
+
+h2#h2_dummy{
+    text-decoration: overline;
+    background-color: tomato;
+    padding: 10px;
+    margin-right: 50%;
+}
+
+/* sibling selector in a common area(div may be body) => ~ */
+
+h2~p{
+    font-style: italic;
+}
+
+/* list item selector */
+
+ul li {
+    color: bisque;
+    background-color: tomato;
+    margin: 2px 80% 4px 0px;
+    padding: 5px;
+    border: solid;
+    border-color: bisque;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+/* > => Direct child selector */
+
+/* parent_name>child_name{
+    css code
+}*/
+
+/* Direct child selector only be used for the
+direct child of the parent element, but not
+for the elements that are child of the child
+we use "Descendant Selector" for that purpose
+*/
+
+/* Descendant Child selector 
+ 
+parent_name child_name{
+    css code
+}
+
+it applies to all the direct and indirect child
+which are inside the parent element, 
+with similar names
+
+*/
+
+/* Pseudo Classes */
+

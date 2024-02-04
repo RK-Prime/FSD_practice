@@ -1,0 +1,295 @@
+body{
+    font-size: 30px;
+    overflow: auto;
+}
+
+.div-class{
+    height: 50px;
+    width: 50px;
+    border: solid;
+    border-width: 5px;
+    border-color:#00000080;
+}
+
+#div_1{
+    background-color: red;
+    position: fixed;
+    top: 15px;
+    left: 200px;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#div_2{
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 40px;
+    z-index: -1;
+}
+
+#div_3{
+    background-color: blue;
+    position: absolute;
+    left: 300px;
+    float: none;
+    /*position: fixed;*/
+}
+
+#div_4{
+    background-color: green;
+    position: absolute; /* no reserved space is left
+    fot the absolute positions*/
+    right: 0px;
+    bottom: 0px;
+}
+
+#div_5{
+    background-color: tomato;
+    position: sticky;
+    width: 110px;
+    top: 15px;
+}
+
+#div_6{
+    background-color: rebeccapurple;
+    position: sticky;
+    top: 15px;
+    width: 90px;
+}
+
+#div_7{
+    background-color: royalblue;
+    position: sticky;
+    top: 15px;
+    width: 70px;
+}
+
+#div_8{
+    background-color: orange;
+    position: sticky;
+    top: 15px;
+}
+
+#p1,#p2{
+    display: inline;/* Converts a block element to inline element*/
+}
+
+/*#strong_1{
+    display: block;
+}*/
+
+#strong_2{
+    display: block;/*Converts an inline element to block element*/
+}
+
+#div_9,#div_10{
+    background-color: royalblue;
+    position: relative;
+    left: 200px;
+    display: inline-block;
+    /*It make an element block, and then structures them
+    in inline format afterwards with other elements.*/
+} 
+
+.grid-container{
+    border: solid;
+    border-width: 2px;
+    border-color: tomato;
+    /*display: grid;
+    */
+    /*grid-template-columns: auto auto auto auto auto;
+    */
+    /*Number of columns generated are 5, 
+    and the elements present are assigned to their position
+    due to the auto used here*/
+
+    /*grid-template-columns: repeat(5,1fr);*/
+    /*It is used to create the template of the table,
+    Here repeat() function is used to specify that the 
+    functionality will be repeated on, 5 times for every 1fraction
+    We can also specify the different columns like how many columns
+    we want to have, and of how much in size.
+    */
+
+    row-gap: 10px;
+    column-gap: 50px;
+    /*gap: 1px 2px ;
+         row column*/
+
+    /*Grid is responsive with respect to the page*/
+
+    /*Flex*/
+
+    display: flex;
+    /*By default, every element will be aligned in a single row*/
+    /*flex-direction: column;*/
+    /*Arrange in a column*/
+    /*flex-direction: column-reverse;*/
+    /*Arrange in a column and reverse that*/
+    flex-direction: row;
+    /*Arrange in a row(i.e. default manner)*/
+    /*flex-direction: row-reverse;*/
+    /*Arrange in a row and reverse that*/
+    flex-wrap: wrap;
+    /*Using wrap the elements changes lines according to 
+    the size of the page
+    wrap makes the elements to wrap around only upto the 
+    viewport and make sure elements do not flow out of
+    the viewport length*/
+    justify-content: right;
+    /*
+    right,flex-end,end
+    Aligns the content in the right of the page
+    The elements are aligned in a right to left manner
+    */
+    justify-content: left;
+    /*
+    left, flex-start, start
+    Aligns the content in the left of the page
+    The elements are aligned in a left to right manner
+    */
+    justify-content: center;
+    /*
+    Aligns the content in the center of the page
+    The elements are aligned in a left to right manner
+    but in the center of the page.
+    */
+    justify-content: space-between;
+    /*
+    Aligns the elements while creating a uniform gap between
+    every element*/
+    justify-content: space-evenly;
+    /*
+    Aligns the elements while creating a uniform gap between 
+    every element and the viewport page also*/
+    justify-content: space-around;
+    /*
+    Aligns the elements by creating a unifrom gap between 
+    every element and a fraction of gap with the viewport page
+    */
+}
+
+.grid-item{
+    border: solid;
+    border-width: 2px;
+}
+/*
+#grid_a{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#grid_b{
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+}*/
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color:brown;
+}
+
+.gradient{
+    height: 200px;
+    width: 200px;
+    /*background-image: linear-gradient(45deg, red, yellow, blue);*/
+    margin: 1cm 0px 1cm 5px;
+    border: solid;
+    border-width: 0.1mm;
+    border-color: rgba(0,0,0,0.5);
+}
+#grad-linear{
+    background-image: linear-gradient(to left,rgba(0,0,0,0),rgba(255,0,0,1));
+}
+
+#grad-radial{
+    background-image: radial-gradient(circle, red ,white ,yellow);
+}
+
+:root{
+    --var_color: tomato;
+    --size: 3cm;
+}
+
+#div_var{
+    height: var(--size);
+    width: var(--size);
+    margin: 1cm 0cm 1cm 3mm;
+    background-color: var(--var_color);
+}
+
+#div_animation_space{
+    width: 10vw;
+    overflow: hidden;
+}
+
+#div_animation{
+    height: 4cm;
+    width: 4cm;
+    margin: 1cm 0cm 1cm 3mm;
+    position: relative;
+
+    display: flex;
+    flex-flow: wrap;
+    border: solid;
+    border-color: blue;
+
+    animation-name: example_a,example_b,example_c;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example_a{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+
+@keyframes example_b{
+    0%{
+        margin-left: 0%;
+        /*transform: translateX(0vw);*/
+    }
+    50%{
+        margin-left: 25%;
+        /*transform: translateX(50vw);*/
+    }
+    75%{
+        margin-left: 50%;
+        /*transform: translateX(100vw);*/
+    }
+    100%{
+        margin-left: 75%;
+    }
+}
+
+@keyframes example_c{
+    0%{
+        border-width:0px;
+        border-radius:0px;
+    } 
+    25%{
+        border-width:0.5px;
+        border-radius:5px;
+    }
+    50%{
+        border-width:1px;
+        border-radius:10px;
+    }
+    75%{
+        border-width:1.5px;
+        border-radius:15px;
+    }
+    100%{
+        border-width:2px;
+        border-radius:20px;
+    }
+}
+

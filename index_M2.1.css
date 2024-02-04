@@ -1,0 +1,131 @@
+/*
+Module 2 Part-1
+*/
+
+/*Lecutre 1*/
+
+body{
+   height: auto;
+   width: auto;
+   background-image: url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+
+}
+
+p{
+   padding: /*top*/20px /*right*/10px /*bottom*/ 20px /*left*/10px;
+   margin: /*top*/30px /*right*/30px /*bottom*/30px /*left*/30px;
+
+   background-color: #fff04d;
+   opacity: 1;
+   font-style: italic;
+   font-size: 1cm;
+   font-weight: bolder;
+   text-align: center;
+   font-family: cursive;
+   letter-spacing: 5px;
+   text-transform: lowercase;
+
+   border-style: solid;
+   border-color: aqua;
+   border-radius: 10px;
+   border-width: 15px;
+   border-bottom-width: 10px;
+   box-shadow: 2px 5px 30px 10px yellow;
+}
+
+#div_1,#div_2,#div_3,#div_4,#div_5{
+
+   margin: 20px;
+   height: 100px;
+   width: 90%;
+   text-align: center;
+
+   border-radius: 10px;
+   border-width: 15px;
+   border-bottom-width: 10px;
+   box-shadow: 2px 5px 30px 10px rgb(74, 64, 224);
+
+}
+
+#div_1{
+   background-color: rgb(238, 218, 3);
+
+   border-style: solid;
+   border-color: aqua;
+
+   text-decoration: underline;
+   
+}
+
+#div_2{
+   background-color: rgb(255, 234, 0);
+   
+   border-style: ridge;
+   border-color: aqua;
+   
+   text-decoration: overline;
+
+}
+
+#div_3{
+   background-color: rgb(244, 227, 43);
+
+   border-style: dashed;
+   border-color: aqua;
+
+   text-decoration: line-through;
+   
+}
+
+#div_4{
+   background-color: rgb(255, 240, 77);
+
+   border-style: dotted;
+   border-color: aqua;
+  
+}
+
+#div_5{
+   background-color: rgb(253, 241, 108);
+
+   border-style: double;
+   border-color: aqua;
+   
+}
+
+/*Lecture 2*/
+
+/*Types of CSS definition in an html document*/
+
+/*Inline CSS*/
+/* <p style="font-family:sarif;font-size:10;">Text</p> */
+
+/*Internal CSS*/
+/* <html>
+   <head>
+   <style>
+   p{
+    font-family:sarif;
+    font-size:10;
+   }
+   </style>   
+   </head>
+   <body>
+   <p>text</p>
+   </body>
+   </html> */
+
+/*External CSS*/
+/* <html>
+   <head>
+   <link rel="stylesheet" href = "style.css">
+   </head>
+   <body>
+   <p>Text</p>
+   </body>
+</html> */
+
+/*Lecture 3*/
